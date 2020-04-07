@@ -1,5 +1,5 @@
 const formElement = document.querySelector('form')
-const url = 'http://localhost:3000/weather-api'
+const url = '/weather-api' // to run locally use localhost:3000/weather-api
 
 const errorParagraph = document.getElementById('error')
 const dataParagraph = document.getElementById('data')
