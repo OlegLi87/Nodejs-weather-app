@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' href='css/styles.css'>
+</head>
+
+<body>
+    <div id='main-content'>
+        {{>header}}
+        <div id='form'>
+            <form>
+                Location <input placeholder="Type in desired location...">
+                <button>Search</button>
+            </form>
+        </div>
+        <p id='error'></p>
+        <p id='data'></p>
+    </div>
+    {{>footer}}
+    <script src='js/weather.js'></script>
+</body>
+
+</html>
