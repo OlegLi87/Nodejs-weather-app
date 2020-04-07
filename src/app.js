@@ -7,7 +7,6 @@ const geocode = require('./utils/geocode.js') //relative to app.js file location
 const forecast = require('./utils/forecast.js')
 
 const portNumber = 3000
-
 const app = express()
 
 const viewsFolder = path.join(__dirname, '../views')
