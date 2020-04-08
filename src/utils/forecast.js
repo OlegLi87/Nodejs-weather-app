@@ -8,7 +8,9 @@ const forecastFunc = (latitude, longitude, callback) => {
         if (error) callback(error)
         else if (response.body.error) callback(response.body.error)
         else {
-            const data = response.body.daily.data[0].summary + '.\nTemperature : ' + response.body.currently.temperature
+            const data = response.body.daily.data[0].summary + '.Current Temperature : ' + response.body.currently.temperature +
+                'c.Temperature High : ' + response.body.daily.data[0].temperatureHigh + 'c.Temperature low : ' +
+                response.body.daily.data[0].temperatureLow + 'c.'
             callback(undefined, data)
         }
     })
